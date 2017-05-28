@@ -6,13 +6,18 @@ description: Modern javascript. All front-end libraries. No server/build.
 
 ![Code preview](code.gif)
 
-# unpkg.com/getlibs 
-## Modern javascript in static files. No server/build required.
+## All javascript libraries in one file
 
-`getlibs` is a pre-configured module loader which pulls external dependencies directly from CDN and transpiles your code on the fly. 
+`getlibs` is a pre-configured module loader which pulls external dependencies directly from CDN. Instead of tracking and installing each library used in your code just include https://unpkg.com/getlibs and you can import/require anything available on unpkg.com and cdnjs.com.
+
+## Write modern javascript (or typescript)
+
+`getlibs` transpiles your code on the fly when necessary. 
 In other words, you can __write modern javascript__ (or typescript) and __use latest frameworks__/libraries without setting up a server 
 or configuring a build script. Just use static files, open in a browser and hit refresh :-). 
 You don't even need node/npm on your machine...
+
+## No server/build required
 
 This will not work on production, so at some point it is still necessary to setup webpack/rollup/eslint/karma/whatever. 
 But you can skip it when you are just starting, experimenting, sharing code, teaching or learning new stuff.
