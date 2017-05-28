@@ -1,6 +1,6 @@
 ---
-site.title: unpkg.com/getlibs
-site.description: Modern javascript. All front-end libraries. No server/build.
+title: unpkg.com/getlibs
+description: Modern javascript. All front-end libraries. No server/build.
 ---
 
 
