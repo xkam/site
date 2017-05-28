@@ -8,7 +8,7 @@ description: Modern javascript. All front-end libraries. No server/build.
 
 ## All javascript libraries in one file
 
-`getlibs` is a pre-configured module loader which pulls external dependencies directly from CDN. Instead of tracking and installing each library just include a single script and you can import/require anything available on NPM (via unpkg.com and cdnjs.com).
+`getlibs` is a pre-configured module loader which pulls external dependencies directly from CDN. Instead of tracking and installing each library just include a single script and you can import/require any front-end library available on NPM (via unpkg.com and cdnjs.com).
 
 ## Write modern javascript (or typescript)
 
