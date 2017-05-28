@@ -22,7 +22,7 @@ However, before going to production, you still need to setup webpack/rollup/esli
 
 ## Installation
 
-There is nothing to install, just include `getlibs` script in html -
+There is nothing to install, just include a link to `getlibs` script on CDN -
 
 ```html
 <script src="https://unpkg.com/getlibs"></script>
@@ -73,20 +73,10 @@ Use `System.import()` in a script tag to load your code into the page.
 </script>
 ```
 
-## Examples
-
-- Angular
-- React
-- Vue
-
-## x-module tags
-
-...
-
 ## How it works
 
-...
+`getlibs` is a SystemJS module loader with custom configuration, which looks for all external modules directly on CDN.
 
 ## About
 
-...
+`getlibs` is an open source project developed by ActiveWidgets.
