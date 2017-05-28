@@ -1,3 +1,10 @@
+---
+site.title: unpkg.com/getlibs
+site.description: Modern javascript. All front-end libraries. No server/build.
+---
+
+
+![Code preview](code.gif)
 
 # unpkg.com/getlibs 
 ## Modern javascript in static files. No server/build required.
