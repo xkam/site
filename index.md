@@ -66,6 +66,10 @@ export class AppComponent {
 }
 ```
 
+<a href="https://github.com/activewidgets/getlibs-angular-hello-ts" target="_blanc">[Full Source]</a> &nbsp;
+<a href="https://activewidgets.github.io/getlibs-angular-hello-ts/" target="_blanc">[Open in browser]</a> &nbsp;
+
+
 Use `System.import()` in a script tag to load your code into the page.
 ```html
 <script>
