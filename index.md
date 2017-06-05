@@ -93,7 +93,7 @@ export class AppComponent {
 
 [SystemJS](https://github.com/systemjs/systemjs) is a module loader developed by [Guy Bedford](https://github.com/guybedford).
 
-`getlibs` is an open source project by [ActiveWidgets](http://www.activewidgets.com/). 
+`getlibs` is a bundle of SystemJS with a custom config - maintained by [ActiveWidgets](http://www.activewidgets.com/). 
 
 [![ActiveWidgets](http://www.activewidgets.com/include/logo/aw-logo-40.png?getlibs-docs)](http://www.activewidgets.com/)
 
