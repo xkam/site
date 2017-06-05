@@ -91,5 +91,7 @@ export class AppComponent {
 
 ## About
 
-`getlibs` is an open source project developed by [![ActiveWidgets](http://www.activewidgets.com/include/logo/aw-logo-40.png?getlibs-docs)](http://www.activewidgets.com/)
+`getlibs` is an open source project developed by [ActiveWidgets](http://www.activewidgets.com/).
+
+[![ActiveWidgets](http://www.activewidgets.com/include/logo/aw-logo-40.png?getlibs-docs)](http://www.activewidgets.com/)
 
