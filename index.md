@@ -1,14 +1,15 @@
 ---
-title: unpkg.com/getlibs
-description: Modern javascript. All front-end libraries. No server/build.
+title: Modern javascript. All front-end libraries. No server/build.
+description: the simplest way to start a new project.
 ---
 
+An in-browser [module loader](https://github.com/systemjs/systemjs) configured to get external dependencies directly from CDN. Babel/typescript included. For quick prototyping, code sharing, teaching/learning - a super simple dev environment without node/webpack/etc. 
 
 ![Code preview](code.gif)
 
-## All javascript libraries in one file
+## All front-end libraries
 
-`getlibs` is a pre-configured module loader which pulls external dependencies directly from CDN. Instead of tracking and installing each library just include a single script and you can import/require any front-end library available on NPM (via unpkg.com and cdnjs.com).
+Includes Angular, React, Vue, Bootstrap, Handlebars, jQuery - all libs from cdnjs.com and all of NPM (via unpkg.com). Most front-end libraries should work out of the box - just use `import`/`require()`. If a popular library does not load, tell us and we'll try to solve it with some library-specific config.
 
 ## Write modern javascript (or typescript)
 
@@ -43,6 +44,10 @@ var compile = require('lodash/template'),
 document.getElementById('app').innerHTML = render(data);
 ```
 
+<a href="https://github.com/activewidgets/getlibs-lodash-hello-js" target="_blanc">[Full Source]</a> &nbsp;
+<a href="https://activewidgets.github.io/getlibs-lodash-hello-js/" target="_blanc">[Open in browser]</a> &nbsp;
+
+
 ##### ES6/import
 ```js
 import React from 'react';
@@ -51,6 +56,10 @@ const msg = 'Hello World!';
 
 ReactDOM.render(<h1>{msg}</h1>, document.getElementById('app'));
 ```
+
+<a href="https://github.com/activewidgets/getlibs-react-hello-es" target="_blanc">[Full Source]</a> &nbsp;
+<a href="https://activewidgets.github.io/getlibs-react-hello-es/" target="_blanc">[Open in browser]</a> &nbsp;
+
 
 ##### Typescript
 ```ts
@@ -68,6 +77,7 @@ export class AppComponent {
 
 <a href="https://github.com/activewidgets/getlibs-angular-hello-ts" target="_blanc">[Full Source]</a> &nbsp;
 <a href="https://activewidgets.github.io/getlibs-angular-hello-ts/" target="_blanc">[Open in browser]</a> &nbsp;
+
 
 
 Use `System.import()` in a script tag to load your code into the page.
