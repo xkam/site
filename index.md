@@ -13,13 +13,13 @@ Angular, React, Vue, Bootstrap, Handlebars, jQuery are included. Plus all packag
 
 ## Write modern javascript (or typescript)
 
-You can use latest language features or JSX and the code will be transpiled in-browser via babel/typescript (if required). To minimize the delay the transpiler will run in a worker thread and process only the changed files. Except for the first time, you might not even notice it as the transpilation happens in parallel with loading and initializing the UI framework.
+Use latest language features or JSX and the code will be transpiled in-browser via babel or typescript (if required). To make it fast the transpiler will start in a worker thread and only process the modified code. Unless you change many files at once or open the project for the first time, the transpiling should be barely noticeable as it runs in parallel with loading and initializing the UI framework.
 
 ## No server/build required
 
-Running your code with `getlibs` does not require any build process or even a web server. Just use static files, open in a browser and hit refresh :-). This might be the easiest way to start a new project, do some prototyping, share code samples, teach or learn the new stuff.
+No need for a build process or even a web server. Just use static files, open in a browser and hit refresh :-). Or run [Browsersync](https://www.browsersync.io/) in watch mode for auto-reload.
 
-However, before going to production, you still need to setup webpack/rollup/eslint/karma/whatever. The `getlibs` project is currently for DEV ONLY.
+ATTENTION! This is all good for dev environment only. Before going to production, you still need to setup webpack/rollup/eslint/karma/whatever and run a proper build. It is not a good idea to transpile your code in-browser in production (unless it is only required for a small number of older browsers - but we are not there yet).
 
 ## Installation
 
@@ -28,11 +28,17 @@ There is nothing to install, just include a link to `getlibs` script on CDN -
 ```html
 <script src="https://unpkg.com/getlibs"></script>
 ```
-Usually, there is no need to include anything else, all other code will be imported on demand by the loader.
 
 ## Usage
 
-Write javascript (or typescript) modules the same way as you would do for browserify/webpack/rollup bundlers. 
+Organize your code as separate modules and call `System.import()` to load the app.
+```html
+<script>
+    System.import('./main.js');
+</script>
+```
+
+Or use `<script type="x-module">...</script>` to put everything into `index.html` :-)
 
 ##### ES5/require()
 ```js
@@ -79,18 +85,11 @@ export class AppComponent {
 <a href="https://activewidgets.github.io/getlibs-angular-hello-ts/" target="_blanc">[Open in browser]</a> &nbsp;
 
 
-
-Use `System.import()` in a script tag to load your code into the page.
-```html
-<script>
-    System.import('./main.js');
-</script>
-```
-
 ## How it works
 
-`getlibs` is a SystemJS module loader with custom configuration, which looks for all external modules directly on CDN.
+`getlibs` is based on [SystemJS](https://github.com/systemjs/systemjs) module loader. Instead of looking for external packages in `node_modules` directory, we tell it to load libraries directly from NPM (via [unpkg.com](https://unpkg.com/)) or [cdnjs.com](https://cdnjs.com/), if available.
 
 ## About
 
-`getlibs` is an open source project developed by ActiveWidgets.
+`getlibs` is an open source project developed by [![ActiveWidgets](http://www.activewidgets.com/include/logo/aw-logo-40.png?getlibs-docs)](http://www.activewidgets.com/)
+
