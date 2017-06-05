@@ -87,11 +87,13 @@ export class AppComponent {
 
 ## How it works
 
-`getlibs` is based on [SystemJS](https://github.com/systemjs/systemjs) module loader. Instead of typical setup where it looks for external packages in `node_modules` directory, it is configured to load libraries directly from NPM (via [unpkg.com](https://unpkg.com/)) or [cdnjs.com](https://cdnjs.com/), if available.
+`getlibs` is based on [SystemJS](https://github.com/systemjs/systemjs) module loader. Instead of typical setup where it looks for external packages in `node_modules` directory, `getlibs` is configured to load libraries directly from NPM (via [unpkg.com](https://unpkg.com/)) or [cdnjs.com](https://cdnjs.com/), if available.
 
 ## About
 
-`getlibs` is an open source project by [ActiveWidgets](http://www.activewidgets.com/). [SystemJS](https://github.com/systemjs/systemjs) module loader is developed by [Guy Bedford](https://github.com/guybedford).
+[SystemJS](https://github.com/systemjs/systemjs) is a module loader developed by [Guy Bedford](https://github.com/guybedford).
+
+`getlibs` is an open source project by [ActiveWidgets](http://www.activewidgets.com/). 
 
 [![ActiveWidgets](http://www.activewidgets.com/include/logo/aw-logo-40.png?getlibs-docs)](http://www.activewidgets.com/)
 
