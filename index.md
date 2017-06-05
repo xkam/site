@@ -3,17 +3,17 @@ title: Modern javascript. All front-end libraries. No server/build.
 description: the simplest way to start a new project.
 ---
 
-An in-browser [module loader](https://github.com/systemjs/systemjs) configured to get external dependencies directly from CDN. Babel/typescript included. For quick prototyping, code sharing, teaching/learning - a super simple dev environment without node/webpack/etc. 
+An in-browser [module loader](https://github.com/systemjs/systemjs) configured to get external dependencies directly from CDN. Includes babel/typescript. For quick prototyping, code sharing, teaching/learning - a super simple dev environment without node/webpack/etc. 
 
 ![Code preview](code.gif)
 
 ## All front-end libraries
 
-Includes Angular, React, Vue, Bootstrap, Handlebars, jQuery - all libs from cdnjs.com and all of NPM (via unpkg.com). Most front-end libraries should work out of the box - just use `import`/`require()`. If a popular library does not load, tell us and we'll try to solve it with some library-specific config.
+Angular, React, Vue, Bootstrap, Handlebars, jQuery are included. Plus all packages from [cdnjs.com](https://cdnjs.com/) and all of NPM (via [unpkg.com](https://unpkg.com/)). Most front-end libraries should work out of the box - just use `import`/`require()`. If a popular library does not load, tell us and we'll try to solve it with some library-specific config.
 
 ## Write modern javascript (or typescript)
 
-Write ES6 or JSX or typescript and your code will be converted on the fly. The transpiler will run in a worker thread and process only the changed files. Except for the first time, you might not even notice the delay because all that happens in parallel with loading and initializing your UI framework.
+You can use latest language features or JSX and the code will be transpiled in-browser via babel/typescript (if required). To minimize the delay the transpiler will run in a worker thread and process only the changed files. Except for the first time, you might not even notice it as the transpilation happens in parallel with loading and initializing the UI framework.
 
 ## No server/build required
 
