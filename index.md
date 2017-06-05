@@ -3,7 +3,7 @@ title: Modern javascript. All front-end libraries. No server/build.
 description: the simplest way to start a new project.
 ---
 
-An in-browser [module loader](https://github.com/systemjs/systemjs) configured to get external dependencies directly from CDN. Includes babel/typescript. For quick prototyping, code sharing, teaching/learning - a super simple dev environment without node/webpack/etc. 
+An in-browser [module loader](https://github.com/systemjs/systemjs) configured to get external dependencies directly from CDN. Includes babel/typescript. For quick prototyping, code sharing, teaching/learning - a super simple web dev environment without node/webpack/etc. 
 
 ![Code preview](code.gif)
 
@@ -19,7 +19,7 @@ Use latest language features or JSX and the code will be transpiled in-browser v
 
 No need for a build process or even a web server. Just use static files, open in a browser and hit refresh :-). Or run [Browsersync](https://www.browsersync.io/) in watch mode for auto-reload.
 
-ATTENTION! This is all good for dev environment only. Before going to production, you still need to setup webpack/rollup/eslint/karma/whatever and run a proper build. It is not a good idea to transpile your code in-browser in production (unless it is only required for a small number of older browsers - but we are not there yet).
+ATTENTION! This is all good for dev environment only. Before going to production, you still need to setup webpack/rollup/eslint/karma/whatever and run a proper build. It is not a good idea to transpile your code in-browser in production (unless it is only required for a small number of older browsers - but we are not there yet :-).
 
 ## Installation
 
@@ -38,7 +38,7 @@ Organize your code as separate modules and call `System.import()` to load the ap
 </script>
 ```
 
-Or use `<script type="x-module">...</script>` to put everything into `index.html` :-)
+Or use `<script type="x-module">...</script>` to put everything into `index.html`
 
 ##### ES5/require()
 ```js
@@ -87,11 +87,11 @@ export class AppComponent {
 
 ## How it works
 
-`getlibs` is based on [SystemJS](https://github.com/systemjs/systemjs) module loader. Instead of looking for external packages in `node_modules` directory, we tell it to load libraries directly from NPM (via [unpkg.com](https://unpkg.com/)) or [cdnjs.com](https://cdnjs.com/), if available.
+`getlibs` is based on [SystemJS](https://github.com/systemjs/systemjs) module loader. Instead of typical setup where it looks for external packages in `node_modules` directory, it is configured to load libraries directly from NPM (via [unpkg.com](https://unpkg.com/)) or [cdnjs.com](https://cdnjs.com/), if available.
 
 ## About
 
-`getlibs` is an open source project developed by [ActiveWidgets](http://www.activewidgets.com/).
+`getlibs` is an open source project by [ActiveWidgets](http://www.activewidgets.com/). [SystemJS](https://github.com/systemjs/systemjs) module loader is developed by [Guy Bedford](https://github.com/guybedford).
 
 [![ActiveWidgets](http://www.activewidgets.com/include/logo/aw-logo-40.png?getlibs-docs)](http://www.activewidgets.com/)
 
